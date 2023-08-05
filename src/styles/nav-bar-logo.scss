@@ -1,0 +1,22 @@
+.logo-wrapper {
+  display: grid;
+  height: 100px;
+  width: 100px;
+  padding-left: 40px;
+  padding-top: 2px;
+
+  .nav-bar-logo-wrapper {
+    display: flex;
+    height: 100px;
+    width: 100px;
+
+  .logo-home-page-link {
+    display: flex;
+    height: 100px;
+    width: 100px;
+    background-image: url('../static/assets/images/Life_Gives_You_Pencils_Logo.png');
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+  }
+}
+}

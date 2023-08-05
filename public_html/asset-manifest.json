@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ef3c59ba.css",
+    "main.js": "/static/js/main.b1c261bc.js",
+    "static/js/787.b4b9d115.chunk.js": "/static/js/787.b4b9d115.chunk.js",
+    "static/media/handmade_paper_background.jpg": "/static/media/handmade_paper_background.0969b32424819539bc51.jpg",
+    "static/media/Mixed_Paint_Background.jpg": "/static/media/Mixed_Paint_Background.ed08a1872284c39bf812.jpg",
+    "static/media/lily-pass-through-the-waters.jpg": "/static/media/lily-pass-through-the-waters.d98738db06212053d301.jpg",
+    "static/media/bold-lions-watermark.jpg": "/static/media/bold-lions-watermark.7725c8d5c15e7f33edff.jpg",
+    "static/media/when-you-walk-through-the-fire-lilies.jpg": "/static/media/when-you-walk-through-the-fire-lilies.1d7351f155e314ed26d9.jpg",
+    "static/media/love-never-fails-watermark.jpg": "/static/media/love-never-fails-watermark.5c5b859c5914f5550505.jpg",
+    "static/media/restore-you-through-the-years-lily.jpg": "/static/media/restore-you-through-the-years-lily.e92cb9c125489c8dadef.jpg",
+    "static/media/cast-the-chains-watermark.jpg": "/static/media/cast-the-chains-watermark.7cdcb6a4d6082a51a8cd.jpg",
+    "static/media/Life Gives You Pencils Website Header.png": "/static/media/Life Gives You Pencils Website Header.1c75f78abb6762235822.png",
+    "static/media/paint_splatter_background 329px.jpg": "/static/media/paint_splatter_background 329px.df55636920055d312343.jpg",
+    "static/media/Life_Gives_You_Pencils_Logo.png": "/static/media/Life_Gives_You_Pencils_Logo.a8fb0ec82bc0503de6dc.png",
+    "static/media/contact_section_background.jpg": "/static/media/contact_section_background.fe3e64d287705c991977.jpg",
+    "static/media/lily-work-in-progress.jpg": "/static/media/lily-work-in-progress.3d74e3d2f781969b1bd7.jpg",
+    "static/media/Artwork_Homepage_Spot_2.jpg": "/static/media/Artwork_Homepage_Spot_2.1cc75d8c18519a58a9f3.jpg",
+    "static/media/Artwork_Homepage_Spot_1.jpg": "/static/media/Artwork_Homepage_Spot_1.79c1626f25d175728b12.jpg",
+    "static/media/Rebekah-Working.jpg": "/static/media/Rebekah-Working.f131220228dcf87d55d1.jpg",
+    "static/media/BekahAboutMe.jpg": "/static/media/BekahAboutMe.8352d645abe144b15ea8.jpg",
+    "static/media/Rebekah-hand-painting.jpg": "/static/media/Rebekah-hand-painting.3e2070f10ed0051b6617.jpg",
+    "static/media/arrow-g32a943528_1280.png": "/static/media/arrow-g32a943528_1280.dd7a7e6814e6ff17d044.png",
+    "static/media/header_background.jpg": "/static/media/header_background.72f6067edc03806be143.jpg",
+    "index.html": "/index.html",
+    "main.ef3c59ba.css.map": "/static/css/main.ef3c59ba.css.map",
+    "main.b1c261bc.js.map": "/static/js/main.b1c261bc.js.map",
+    "787.b4b9d115.chunk.js.map": "/static/js/787.b4b9d115.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ef3c59ba.css",
+    "static/js/main.b1c261bc.js"
+  ]
+}

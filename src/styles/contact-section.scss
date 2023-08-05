@@ -1,0 +1,61 @@
+.contact-section-wrapper {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 150px;
+  background-image: url('../static/assets/images/contact_section_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 115px;
+    width: 170px;
+    border: 1.5px solid black;  
+    border-radius: 5px;
+    background-color: $dark-salmon;
+    justify-content: center;
+    align-items: center;
+
+    .contact-text {
+    font-family: "blanket", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
+    margin-bottom: 5px;
+  }
+    
+    .social-media-section-wrapper {
+      display: flex;
+      height: 20px;
+ 
+      .facebook-link {
+        text-decoration: none;
+        justify-content: center;
+        font-family: "blanket", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px;
+        color: $pink-off-white;
+        background-color: $dark-salmon;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:active, &:focus {
+          outline: none;
+        }
+
+        a:visited {
+          color: inherit;
+        }
+
+        &:hover {
+          // -webkit-text-fill-color: $light-turquoise;
+          font-size: 22px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,44 @@
+.contact-page-wrapper {
+  display: grid;
+
+  .contact-info-wrapper {
+    max-height: 1500px;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 25px;
+    padding-top: 200px;
+ 
+    .social-media-section-wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+ 
+      .facebook-link {
+        text-decoration: none;
+        justify-content: center;
+        font-family: "blanket", sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 25px;
+        color: $dark-turqoise;
+        cursor: pointer;
+        transition: all 0.5s ease-in-out;
+
+        &:active, &:focus {
+          outline: none;
+        }
+
+        a:visited {
+          color: inherit;
+        }
+
+        &:hover {
+          font-size: 27px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.welcome-section-wrapper {
+  display: grid;
+  background: url('../static/assets/images/paint_splatter_background 329px.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  height: 500px;
+  align-content: center;
+
+  .welcome-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  font-size: 23px;
+
+  h2 {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+  }
+}
+  
+}
+
+
+

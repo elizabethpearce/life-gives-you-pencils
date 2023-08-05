@@ -1,0 +1,47 @@
+.art-section-wrapper{
+  display: grid;
+  justify-content: center;
+  height: 750px;
+  align-content: center;
+
+  .art-section {
+    display: flex;
+    flex-direction: row;
+    width: 1500px;
+    justify-content: space-evenly;
+
+    .art-spot-one {
+      margin-top: 15px;
+      margin-bottom: 10px;
+
+      .image-one {
+        height: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .for-sale-btn-wrapper {
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+      }
+    }
+
+    .art-spot-2 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+
+      .image-two {
+        height: 500px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      .all-artwork-button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+    }
+  }
+}

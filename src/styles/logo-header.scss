@@ -1,0 +1,17 @@
+.logo-header-wrapper {
+  display: grid;
+  justify-content: center;
+  height: 275px;
+  align-items: center;
+
+  .logo-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+
+    .logo-header-img {
+      margin-bottom: 10px;
+    }
+   }
+}

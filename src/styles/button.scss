@@ -1,0 +1,105 @@
+.btn {
+  @include base-btn();
+}
+
+.btn-special-nav-bar {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 45px;
+  width: 120px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: $dark-turqoise;
+  font-family: "blanket", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 23px;
+  text-decoration: none;
+  color: black;  
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    background-image: url('../static/assets/images/Mixed_Paint_Background.jpg');
+    background-size: cover;
+    font-size: 25px;
+    font-weight: 550;
+   }
+}
+
+.edit-btn {
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 20px;
+  width: 50px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: $dark-turqoise;
+  font-family: "blanket", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;  
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    background-image: url('../static/assets/images/Mixed_Paint_Background.jpg');
+    background-size: cover;
+    font-size: 18px;
+    font-weight: 550;
+   }
+}
+
+.btn-admin-login{
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 30px;
+  width: 70px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  background-color: $dark-turqoise;
+  font-family: "blanket", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;  
+
+  &:active, &:focus {
+    outline: none;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+
+  &:hover {
+    background-image: url('../static/assets/images/Mixed_Paint_Background.jpg');
+    background-size: cover;
+    font-size: 20px;
+    font-weight: 550;
+   }
+}

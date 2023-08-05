@@ -1,0 +1,18 @@
+.login-page-wrapper {
+  display: grid;
+
+  .login-form-wrapper {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 25px;
+    padding: 100px 0px 30px 0px;
+
+    .login-form-spacing {
+      display: flex;
+      height: 20px;
+      width: 100%
+    }
+  }
+}

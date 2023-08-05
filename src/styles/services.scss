@@ -1,0 +1,23 @@
+.services-page-wrapper {
+  display: grid;
+
+  .services-header {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    border-bottom: 3px solid black;
+    height: 50px;
+    align-items: center;
+    background: rgba(253, 235, 227, 0.6);
+  }
+
+  .services-main-text {
+    display: flex;
+    max-height: 1500px;
+    min-height: 1000px;
+    padding-top: 200px;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 40px;
+  }
+}

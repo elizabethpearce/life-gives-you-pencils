@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  font-family: "blanket", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('/public/images/handmade_paper_background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.app-container {
+  flex: 1;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main-content {
+  /* Add any specific styles you need for the main content */
+  /* For example: padding: 20px; */
+}
+
+
+
