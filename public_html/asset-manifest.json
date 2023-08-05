@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.ef3c59ba.css",
+    "main.css": "/static/css/main.82dda568.css",
     "main.js": "/static/js/main.b1c261bc.js",
     "static/js/787.b4b9d115.chunk.js": "/static/js/787.b4b9d115.chunk.js",
     "static/media/handmade_paper_background.jpg": "/static/media/handmade_paper_background.0969b32424819539bc51.jpg",
@@ -24,12 +24,12 @@
     "static/media/arrow-g32a943528_1280.png": "/static/media/arrow-g32a943528_1280.dd7a7e6814e6ff17d044.png",
     "static/media/header_background.jpg": "/static/media/header_background.72f6067edc03806be143.jpg",
     "index.html": "/index.html",
-    "main.ef3c59ba.css.map": "/static/css/main.ef3c59ba.css.map",
+    "main.82dda568.css.map": "/static/css/main.82dda568.css.map",
     "main.b1c261bc.js.map": "/static/js/main.b1c261bc.js.map",
     "787.b4b9d115.chunk.js.map": "/static/js/787.b4b9d115.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ef3c59ba.css",
+    "static/css/main.82dda568.css",
     "static/js/main.b1c261bc.js"
   ]
 }

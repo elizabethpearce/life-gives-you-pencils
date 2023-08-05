@@ -4,12 +4,14 @@
 /node_modules
 /.pnp
 .pnp.js
+/.vscode
 
 # testing
 /coverage
 
 # production
 /build
+public_html
 
 # misc
 .DS_Store
@@ -18,6 +20,7 @@
 .env.test.local
 .env.production.local
 sftp.json
+
 
 npm-debug.log*
 yarn-debug.log*
