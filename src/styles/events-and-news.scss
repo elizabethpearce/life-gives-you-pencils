@@ -25,7 +25,7 @@
       text-align: center;
       border-right: 2px solid black;
       max-height: 1500px;
-    min-height: 1000px;
+      min-height: 1000px;
       width: 50%;
     }
 
@@ -37,6 +37,27 @@
       width: 50%;
       max-height: 1500px;
     min-height: 1000px;
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .events-and-news-wrapper {
+    width: 640px;
+
+    .events-and-news-header-wrapper {
+      font-size: 40px;      
+    }
+
+    .events-and-news-text-wrapper {
+      width: 640px;
+      .events-wrapper {
+        font-size: 20px;
+      }
+      
+      .news-wrapper {
+        font-size: 20px;
+      }
     }
   }
 }

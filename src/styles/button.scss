@@ -103,3 +103,19 @@
     font-weight: 550;
    }
 }
+
+@media (max-width: 640px) {
+  .btn {
+    height: 35px;
+    width: 110px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .btn-special-nav-bar {
+    height: 35px;
+    width: 110px;
+    font-size: 18px;
+  }
+}

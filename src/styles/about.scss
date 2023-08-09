@@ -74,3 +74,54 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+
+  .about-page-wrapper {
+    max-width: 640px;
+
+  .about-section-wrapper {
+    width: auto;
+    padding: 20px 0px 20px 70px;
+    flex-direction: column;    
+
+    .about-section-profile-picture {
+      background-image: url('../static/assets/images/BekahAboutMe.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      width: 400px;
+    }
+
+    .about-section-profile-text {
+      text-align: center;
+      font-size: 20px;
+      padding-top: 0px;
+      padding-left: 35px;
+    }
+  }
+
+  .about-section-art-display {
+    width: 640px;
+    padding: 10px 0px 10px 0px;
+    
+    .about-section-artwork-one {
+      background-image: url('../static/assets/images/lily-work-in-progress.jpg');
+      height: 200px;
+      background-size: 175px;
+    }
+
+    .about-section-artwork-two {
+      background-image: url('../static/assets/images/Rebekah-Working.jpg');
+      height: 200px;
+      background-size: 175px;
+     }
+
+    .about-section-artwork-three {
+      background-image: url('../static/assets/images/Rebekah-hand-painting.jpg');
+      height: 200px;
+      background-size: 175px;
+    }
+  }
+}
+}

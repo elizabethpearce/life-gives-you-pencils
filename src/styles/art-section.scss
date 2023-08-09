@@ -45,3 +45,49 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .art-section-wrapper{
+    width: 640px;
+    height: auto;
+
+    .art-section {
+      width: 640px;
+      flex-direction: column;
+
+      .art-spot-one {
+        margin-top: 10px;
+        margin-bottom: 5px;
+
+      .image-one {
+        height: auto;
+        width: 500px;
+        padding-left: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+
+      .for-sale-btn-wrapper {
+        margin: 5px;
+      }
+    }
+
+    .art-spot-2 {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      .image-two {
+        height: auto;
+        width: 500px;
+        padding-left: 60px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .all-artwork-button-wrapper {
+        margin-top: 5px;
+      }
+    }
+    }
+
+  }
+  }

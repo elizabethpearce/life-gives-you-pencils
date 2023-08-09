@@ -42,3 +42,26 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .contact-page-wrapper {
+
+    .contact-info-wrapper {
+      width: 640px;
+      font-size: 20px;
+      padding-top: 100px;
+      min-height: 600px;
+
+      .social-media-section-wrapper {
+
+        .facebook-link {
+          font-size: 20px;
+
+          &:hover {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+  }
+}

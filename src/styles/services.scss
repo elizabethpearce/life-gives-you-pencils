@@ -21,3 +21,19 @@
     font-size: 40px;
   }
 }
+
+@media (max-width: 640px) {
+  .services-page-wrapper {
+    width: 640px;
+
+    .services-header {
+      width: 640px;
+      font-size: 40px;
+    }
+
+    .services-main-text {
+      font-size: 30px;
+      min-height: 600px;
+    }
+  }
+}

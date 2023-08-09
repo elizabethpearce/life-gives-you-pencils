@@ -25,5 +25,14 @@
   
 }
 
+@media (max-width: 640px) {
+  .welcome-section-wrapper {
+    width: 640px;
+    height: 400px;
 
+    .welcome-section {
+      font-size: 20px;     
+    }
+  }
+}
 

@@ -15,3 +15,21 @@
     }
    }
 }
+
+@media (max-width: 640px) {
+  .logo-header-wrapper {
+    width: 640px;
+    height: 200px;
+
+    .logo-header {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      width: 325px;
+  
+      .logo-header-img {
+        margin-bottom: 10px;
+      }
+     }
+  }
+}

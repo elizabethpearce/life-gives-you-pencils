@@ -23,3 +23,20 @@
     }
   }
 }
+
+@media (max-width: 640px) {
+  .for-sale-rotating-images {
+    width: 640px;
+    min-height: 600px;
+
+    .rotating-images-wrapper {
+      max-width: 400px;
+      max-height: 400px;
+
+      img {
+        max-width: 400px;
+        max-height: 400px;
+      }
+    }
+  }
+}
