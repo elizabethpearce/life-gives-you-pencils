@@ -41,23 +41,23 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   .events-and-news-wrapper {
-    width: 360px;
+    width: 750px;
 
     .events-and-news-header-wrapper {
-      font-size: 30px;      
+      font-size: 40px;      
     }
 
     .events-and-news-text-wrapper {
-      width: 360px;
-
-      .events-wrapper {
-        font-size: 16px;
-      }
+      width: 750px;
       
+      .events-wrapper {
+        font-size: 20px;
+      }
+
       .news-wrapper {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
   }

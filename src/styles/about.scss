@@ -75,14 +75,14 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
 
   .about-page-wrapper {
-    max-width: 360px;
+    max-width: 750px;
 
   .about-section-wrapper {
     width: auto;
-    padding: 10px 0px 10px 40px;
+    align-items: center;
     flex-direction: column;    
 
     .about-section-profile-picture {
@@ -90,37 +90,36 @@
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      width: 280px;
+      width: 400px;
     }
 
     .about-section-profile-text {
       text-align: center;
-      font-size: 18px;
+      font-size: 20px;
       padding-top: 0px;
-      padding-left: 20px;
     }
   }
 
   .about-section-art-display {
-    width: 360px;
-    padding: 10px 0px 10px 0px;
-    
+    width: 750px;
+    align-items: center;
+
     .about-section-artwork-one {
       background-image: url('../static/assets/images/lily-work-in-progress.jpg');
-      height: 140px;
-      background-size: 125px;
+      height: 200px;
+      background-size: 175px;
     }
 
     .about-section-artwork-two {
       background-image: url('../static/assets/images/Rebekah-Working.jpg');
-      height: 140px;
-      background-size: 125px;
+      height: 200px;
+      background-size: 175px;
      }
 
     .about-section-artwork-three {
       background-image: url('../static/assets/images/Rebekah-hand-painting.jpg');
-      height: 140px;
-      background-size: 125px;
+      height: 200px;
+      background-size: 175px;
     }
   }
 }

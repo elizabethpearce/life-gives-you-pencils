@@ -6,7 +6,8 @@ const Contact = () => {
       <div className='contact-page-wrapper'>
 
         <div className='contact-info-wrapper'>
-          Have questions or want to request custom artwork? Contact me in one of the ways below! <br/><br/><br/>
+          Have questions or want to request custom artwork? <br/>
+          Contact me in one of the ways below! <br/><br/><br/>
           Email: info@lifegivesyoupencils.com<br/><br/>
           Mailing: P.O. Box 536, Peyton, CO 80831<br/><br/><br/> 
       

@@ -25,26 +25,37 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   .nav-bar-header-wrapper {
-    width: 360px;
+    width: 750px;
     grid-template-columns: 15% 80%;
 
     .nav-bar-button-wrapper {
-      padding-right: 6px;
+      padding-right: 10px;
 
       .btn-special-nav-bar {
-        width: 40px;
-        height: 20px;
-        font-size: 10px;
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
+
+        &:hover {
+          font-size: 22px;
+          font-weight: 500;
+        }
       }
 
       .btn {
-        width: 40px;
-        height: 20px;
-        font-size: 10px;
+        width: 70px;
+        height: 30px;
+        font-size: 20px;
         text-align: center;
+        line-height: .7;      
+
+      &:hover {
+        font-size: 22px;
+        font-weight: 500;
       }
+    }
     }
   }
 }

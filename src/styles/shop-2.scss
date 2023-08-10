@@ -24,19 +24,3 @@
   }
 }
 
-@media (max-width: 360px) {
-  .for-sale-rotating-images {
-    width: 640px;
-    min-height: 480px;
-
-    .rotating-images-wrapper {
-      max-width: 240px;
-      max-height: 240px;
-
-      img {
-        max-width: 240px;
-        max-height: 240px;
-      }
-    }
-  }
-}

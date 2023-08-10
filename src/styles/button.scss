@@ -104,18 +104,28 @@
    }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   .btn {
-    height: 28px;
-    width: 90px;
-    font-size: 14px;
+    height: 35px;
+    width: 110px;
+    font-size: 18px;
+
+    &:hover {
+      font-size: 22px;
+      font-weight: 500;
+    }
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 750px) {
   .btn-special-nav-bar {
-    height: 28px;
-    width: 90px;
-    font-size: 14px;
+    height: 35px;
+    width: 110px;
+    font-size: 18px;
+    
+    &:hover {
+      font-size: 22px;
+      font-weight: 500;
+    }
   }
 }

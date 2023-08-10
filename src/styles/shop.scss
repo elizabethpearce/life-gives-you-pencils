@@ -27,17 +27,33 @@
   }  
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   .shop-page-wrapper {
-    width: 360px;
+    width: 750px;
 
     .shop-header {
-      font-size: 30px;
+      font-size: 40px;
 
       .shop-header-text {
-        font-size: 16px;
+        font-size: 20px;
       }
     }
 
+    @media (max-width: 750px) {
+      .for-sale-rotating-images {
+        width: 750px;
+        min-height: 600px;
+    
+        .rotating-images-wrapper {
+          max-width: 400px;
+          max-height: 400px;
+    
+          img.rotating-images {
+            max-width: 400px;
+            max-height: 400px;
+          }
+        }
+      }
+    }
   }
 }

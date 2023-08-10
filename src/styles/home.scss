@@ -1,3 +1,9 @@
 .home-page-wrapper {
   display: grid;
 }
+
+@media (max-width: 750px) {
+  .home-page-wrapper {
+    width: 750px;
+  }
+}

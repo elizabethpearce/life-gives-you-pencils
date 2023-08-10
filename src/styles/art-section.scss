@@ -46,45 +46,44 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   .art-section-wrapper{
-    width: 360px;
+    width: 750px;
     height: auto;
 
     .art-section {
-      width: 360px;
-      flex-direction: column;
+      width: 750px;
+      flex-direction: column; 
+      align-items: center;
 
       .art-spot-one {
-        margin-top: 5px;
-        margin-bottom: 3px;
+        margin-top: 10px;
+        margin-bottom: 5px;
 
       .image-one {
         height: auto;
-        width: 280px;
-        padding-left: 40px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        width: 500px; 
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
 
       .for-sale-btn-wrapper {
-        margin: 3px;
+        margin: 5px;
       }
     }
 
     .art-spot-2 {
-      margin-top: 5px;
-      margin-bottom: 5px;
+      margin-top: 10px;
+      margin-bottom: 10px;
 
       .image-two {
         height: auto;
-        width: 280px;
-        padding-left: 40px;
-        padding-top: 3px;
-        padding-bottom: 3px;
+        width: 500px;
+        padding-top: 5px;
+        padding-bottom: 5px;
       }
       .all-artwork-button-wrapper {
-        margin-top: 3px;
+        margin-top: 5px;
       }
     }
     }

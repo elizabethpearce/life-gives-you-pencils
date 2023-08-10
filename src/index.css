@@ -18,9 +18,9 @@ body {
   grid-template-rows: auto 1fr auto;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 750px) {
   body {
-    width: 360px;
+    width: 750px;
     background-size: cover;
     height: 100%;
   }
