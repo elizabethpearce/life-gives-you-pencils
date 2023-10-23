@@ -3,26 +3,26 @@ import RotatingFrame from './shop-rotating-imgs';
 
 const Gallery = () => {
 
-  const [images, setImages] = useState([]);
+  const [images, setImages] = useState(null);
 
   useEffect(() => {
     fetch('http://localhost:5000/images')
       .then((response) => response.json())
       .then((data) => {
-        const processedImages = data.map((image) => ({
-          ...image,
-          img: `data:image/jpeg;base64,${image.img}`,
-        }));
-        setImages(processedImages);
+        console.log('Data fetched:', data);
+        setImages(data);
       })
-      .catch((error) => {
+        .catch((error) => {
         console.error('Error fetching images:', error);
       });
   }, []);
 
+  useEffect(() => {
+    console.log(images);
+  }, [images]);
+
     return (
-      <div className='gallery-page-wrapper'>
-        
+      <div className='gallery-page-wrapper'>        
         <div className='gallery-header'>
           - Gallery -
           <div className='gallery-header-text'>
@@ -35,8 +35,14 @@ const Gallery = () => {
         </div>
 
         <div className='gallery-rotating-images'>
-          <RotatingFrame images={images.map((image) => image.img)} interval={2900} width='700px' />
-        </div>
+        {images === null ? (
+          <div>Loading...</div>
+        ) : images.length > 0 ? (
+          <RotatingFrame images={images.map((image) => image.s3_url)} interval={2900} width='700px' />
+        ) : (
+          <div>No images available</div>
+        )}
+      </div>
       </div>
     );
   }

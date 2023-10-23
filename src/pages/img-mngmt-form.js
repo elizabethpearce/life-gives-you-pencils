@@ -16,32 +16,12 @@ const ImgManagementForm = () => {
   const fetchImages = () => {
     axios.get('http://localhost:5000/images')
       .then((response) => {
-        const processedImages = response.data.map((image) => {
-          let mimeType = '';
-  
-          if (image.name.endsWith('.png')) {
-            mimeType = 'image/png';
-          } else if (image.name.endsWith('.jpg') || image.name.endsWith('.jpeg')) {
-            mimeType = 'image/jpeg';
-          } else if (image.name.endsWith('.svg')) {
-            mimeType = 'image/svg+xml';
-          } else {
-            console.warn('Unknown image format:', image.name);
-            return null;
-          }
-  
-          const blob = new Blob([Uint8Array.from(atob(image.img), c => c.charCodeAt(0))], { type: mimeType });
-          return {
-            ...image,
-            img: URL.createObjectURL(blob),
-          };
-        }).filter(image => image !== null);
-        setImages(processedImages);
+        setImages(response.data);
       })
       .catch((error) => {
         console.error('Error fetching images:', error);
       });
-  };  
+  };
 
   useEffect(() => {
     fetchImages();
@@ -153,9 +133,9 @@ const ImgManagementForm = () => {
     }   
 
     const formData = new FormData();
-    formData.append('image', selectedFile[0]);
+    formData.append('user_file', selectedFile[0]);
     formData.append('name', imageName);
-    formData.append('description', imageDescription);
+    formData.append('description', imageDescription);   
 
     axios.post('http://localhost:5000/insert', formData, {
       headers: {
@@ -201,7 +181,7 @@ const ImgManagementForm = () => {
                       checked={selectedImages.includes(image.id)}
                       onChange={() => handleImageSelection(null, image.id)}
                     />
-                    <img src={image.img} alt={image.name} onClick={(e) => handleImageSelection(e, image.id)} />
+                    <img src={image.s3_url} alt={image.name} onClick={(e) => handleImageSelection(e, image.id)} />
                     <h3>{image.name}</h3>
                     <p>{image.description}</p>
                   </label>

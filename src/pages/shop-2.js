@@ -17,7 +17,7 @@ const ShopTwo = () => {
         lilyPassThroughWaters,
         loveNeverFails,
         walkThroughFire,
-        restoreYouLily
+        restoreYouLily,        
       ];  
 
       setImages(imagePaths);
