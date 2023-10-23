@@ -38,7 +38,7 @@ const Gallery = () => {
         {images === null ? (
           <div>Loading...</div>
         ) : images.length > 0 ? (
-          <RotatingFrame images={images.map((image) => image.s3_url)} interval={2900} width='700px' />
+          <RotatingFrame images={images.map((image) => image.user_file)} interval={2900} width='700px' />
         ) : (
           <div>No images available</div>
         )}

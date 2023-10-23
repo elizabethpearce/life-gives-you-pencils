@@ -7,7 +7,6 @@ const ImgManagementForm = () => {
   const [selectedFile, setSelectedFile] = useState(null);
   const [selectedFileNames, setSelectedFileNames] = useState([]);
   const [imageName, setImageName] = useState('');
-  const [imageDescription, setImageDescription] = useState('');
   const [images, setImages] = useState([]);
   const [selectedImages, setSelectedImages] = useState([]);
   const [editModeImageId, setEditModeImageId] = useState(null);
@@ -56,7 +55,6 @@ const ImgManagementForm = () => {
     setEditModeImageId(imageId);
     const selectedImage = images.find((image) => image.id === imageId);
     setImageName(selectedImage.name);
-    setImageDescription(selectedImage.description);
     setSelectedImages([]);
   };
 
@@ -67,8 +65,7 @@ const ImgManagementForm = () => {
     } 
    
     const updatedImage = {
-      name: imageName,
-      description: imageDescription,
+      name: imageName,  
     };
   
     axios
@@ -78,7 +75,6 @@ const ImgManagementForm = () => {
         fetchImages();
         setSelectedFile(null);
         setImageName('');
-        setImageDescription('');
         setEditModeImageId(null);
         exitEditMode();
       })
@@ -90,7 +86,6 @@ const ImgManagementForm = () => {
   const exitEditMode = () => {
     setEditModeImageId(null);
     setImageName('');
-    setImageDescription('');
   };
 
   const handleDeleteSelectedImages = () => {
@@ -122,10 +117,6 @@ const ImgManagementForm = () => {
     setImageName(e.target.value);
   };
 
-  const handleDescriptionChange = (e) => {
-    setImageDescription(e.target.value);
-  };
-
   const handleUpload = () => {
     if (!selectedFile) {
       console.error('No image selected.');
@@ -134,8 +125,7 @@ const ImgManagementForm = () => {
 
     const formData = new FormData();
     formData.append('user_file', selectedFile[0]);
-    formData.append('name', imageName);
-    formData.append('description', imageDescription);   
+    formData.append('name', imageName); 
 
     axios.post('http://localhost:5000/insert', formData, {
       headers: {
@@ -147,7 +137,6 @@ const ImgManagementForm = () => {
       fetchImages();
       setSelectedFile(null);
       setImageName('');
-      setImageDescription('');
       if (fileInputRef.current) {
         fileInputRef.current.value = '';
       }
@@ -181,9 +170,8 @@ const ImgManagementForm = () => {
                       checked={selectedImages.includes(image.id)}
                       onChange={() => handleImageSelection(null, image.id)}
                     />
-                    <img src={image.s3_url} alt={image.name} onClick={(e) => handleImageSelection(e, image.id)} />
-                    <h3>{image.name}</h3>
-                    <p>{image.description}</p>
+                    <img src={image.user_file} alt={image.name} onClick={(e) => handleImageSelection(e, image.id)} />
+                    <h3>{image.name}</h3>        
                   </label>
                   {!editModeImageId ? (
                     <button className="edit-btn" onClick={() => enterEditMode(image.id)}>
@@ -202,15 +190,7 @@ const ImgManagementForm = () => {
         </div>
         <div className='image-name-input-container'>
           <input type="text" placeholder="Image Name" value={imageName} onChange={handleNameChange} maxLength={30}/>
-        </div>
-        <div className='description-input-contaner'>
-          <textarea className='description-input'
-            placeholder="Image Description"
-            value={imageDescription}
-            onChange={handleDescriptionChange}
-            maxLength={100}
-          />
-        </div>
+        </div>    
         <div className='upload-image-btn-container'>
         {!editModeImageId ? (
           <button className="btn" onClick={handleUpload}>
