@@ -13,7 +13,7 @@ const ImgManagementForm = () => {
   const fileInputRef = useRef(null);
 
   const fetchImages = () => {
-    axios.get('http://localhost:5000/images')
+    axios.get('https://life-gives-you-pencils-api-f1604f957ec2.herokuapp.com/images')
       .then((response) => {
         setImages(response.data);
       })
@@ -69,7 +69,7 @@ const ImgManagementForm = () => {
     };
   
     axios
-      .put(`http://localhost:5000/update/${editModeImageId}`, updatedImage)
+      .put(`https://life-gives-you-pencils-api-f1604f957ec2.herokuapp.com/update/${editModeImageId}`, updatedImage)
       .then((response) => {
         console.log('Image updated successfully:', response);
         fetchImages();
@@ -100,7 +100,7 @@ const ImgManagementForm = () => {
     }
 
     axios
-      .delete('http://localhost:5000/delete_selected', {
+      .delete('https://life-gives-you-pencils-api-f1604f957ec2.herokuapp.com/delete_selected', {
         data: { imageIds: selectedImages },
       })
       .then((response) => {
@@ -127,7 +127,7 @@ const ImgManagementForm = () => {
     formData.append('user_file', selectedFile[0]);
     formData.append('name', imageName); 
 
-    axios.post('http://localhost:5000/insert', formData, {
+    axios.post('https://life-gives-you-pencils-api-f1604f957ec2.herokuapp.com/insert', formData, {
       headers: {
         'Content-Type': 'multipart/form-data',
       },

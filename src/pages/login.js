@@ -12,7 +12,7 @@ const Login = ({ isLoggedIn, setIsLoggedIn }) => {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch('http://localhost:5000/login', {
+      const response = await fetch('https://life-gives-you-pencils-api-f1604f957ec2.herokuapp.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

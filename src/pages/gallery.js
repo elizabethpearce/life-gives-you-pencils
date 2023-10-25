@@ -6,7 +6,7 @@ const Gallery = () => {
   const [images, setImages] = useState(null);
 
   useEffect(() => {
-    fetch('http://localhost:5000/images')
+    fetch('https://life-gives-you-pencils-api-f1604f957ec2.herokuapp.com/images')
       .then((response) => response.json())
       .then((data) => {
         console.log('Data fetched:', data);
