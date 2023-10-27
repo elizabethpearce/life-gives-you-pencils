@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 import ScrollToTop from './pages/components/scroll-to-top';
 import './index.css';
 import './main.scss';
@@ -24,6 +24,7 @@ import reportWebVitals from './reportWebVitals';
 import NavBar from './pages/components/home/nav-bar';
 import NavBarLogo from './pages/components/home/nav-bar-logo';
 import ContactSection from './pages/components/home/contact-section';
+import { NavLink } from 'react-router-dom';
 
 const AppWrapper = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(localStorage.getItem('authToken') ? true : false);
@@ -52,7 +53,7 @@ const AppWrapper = () => {
   }, [isLoggedIn]);
 
   return (
-    <BrowserRouter>
+    <Router>
     <ScrollToTop />
       <div className="app-container">
             <div className="nav-bar-header-wrapper">
@@ -66,29 +67,32 @@ const AppWrapper = () => {
       
             <div className="main-content">
         <Routes>
-        <Route path="/" element={<App isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
-          <Route path="home" element={<Home isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
-          <Route path="shop" element={<ShopTwo />} />
-          <Route path="gallery" element={<Gallery />} />
-          <Route path="art-series-one" element={<ArtSeriesOne />} />
-          <Route path="art-series-two" element={<ArtSeriesTwo />} />
-          <Route path="custom-jobs" element={<CustomJobs />} />
-          <Route path="misc-art" element={<MiscArt />} />
-          <Route path="services" element={<Services />} />
-          <Route path="events-news" element={<EventsAndNews />} />
-          <Route path="about" element={<About />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
-          <Route exact path="img-management" element={<ImgManagementForm />} />
-          <Route path="*" element={<ErrorPage />} />      
+        <Route exact path="/" element={<App isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
+          <Route exact path="/home" element={<Home isLoggedIn={isLoggedIn} handleLogout={handleLogout} />} />
+          <Route exact path="/shop" element={<ShopTwo />} />
+          <Route exact path="/gallery" element={<Gallery />} />
+          <Route exact path="/art-series-one" element={<ArtSeriesOne />} />
+          <Route exact path="/art-series-two" element={<ArtSeriesTwo />} />
+          <Route exact path="/custom-jobs" element={<CustomJobs />} />
+          <Route exact path="/misc-art" element={<MiscArt />} />
+          <Route exact path="/services" element={<Services />} />
+          <Route exact path="/events-news" element={<EventsAndNews />} />
+          <Route exact path="/about" element={<About />} />
+          <Route exact path="/contact" element={<Contact />} />
+          <Route path="login" element={<Login isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn}/>} />
+          <Route exact path="/img-management" element={<ImgManagementForm />} />
+          <Route exact path="*" element={<ErrorPage />} />      
         </Routes>
         </div>
       
         <div className='contact-section-wrapper'>
           <ContactSection />
+          <div className='admin-login'>
+            <NavLink to="/login">Admin Login</NavLink>
+          </div>  
         </div>
     </div>
-  </BrowserRouter>
+  </Router>
 );
   };
 
